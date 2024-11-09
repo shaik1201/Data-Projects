@@ -23,6 +23,6 @@ Project Link | Associated | Area | Tools | Project Description
 ### 📂 Dashboard
 Project Link | Associated | Tools | Project Description
 ---|---|---|---
-👩🏻‍💻 []() (EDA, data analysis) | Challenge Task - IYKRA | Tableau | Joined tables within the dataset to conduct an analysis focused on identifying the demographic traits of employees who are more likely to leave the company, as well as an exploration of the factors that influence employee attrition.
+👩🏻‍💻 [Donations to Israel](https://public.tableau.com/app/profile/shai.kikozashvily/viz/Team55Presentation26_07/sheet18) (EDA, data analysis) | - | Tableau | Analyze donations to Israel.
 <br>
 <br>
