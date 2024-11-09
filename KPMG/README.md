@@ -12,13 +12,11 @@ The client provided KPMG with 3 datasets:
 
 ---
 
-## 📂 **Task 1 - Data Quality Assessment**
+## 📂 **Data Quality**
 
 ### **Background Information**
 
 Sprocket Central Pty Ltd needs help with its customer and transactions data. The organisation has a large dataset relating to its customers, but their team is unsure how to effectively analyse it to help optimise its marketing strategy. 
-
-*"The importance of optimising the quality of customer datasets cannot be underestimated. The better the quality of the dataset, the better chance you will be able to use it drive company growth."*
 
 The client provided KPMG with 3 datasets:
 - Customer Demographic 
@@ -32,7 +30,7 @@ The client provided KPMG with 3 datasets:
 <br>
 
 ### **Result**
-[Check out the analysis in the notebook!](https://github.com/faizns/VIX-Data-Analytics-KPMG-AU/blob/main/Task%201%20-%20KPMG%20VIX.ipynb) <br>
+[Check out the analysis in the notebook!](https://github.com/shaik1201/Data-Projects/blob/main/KPMG/Data%20Quality.ipynb) <br>
 
 
 | **Tabel Name**      | **No of Records** | **Distinct customer_id** | **Date Data Recieved** |
@@ -86,7 +84,7 @@ There are inconsistent datatypes and values for the same column.
 
 ---
 
-## 📂 **Task 2 - Data Insights**
+## 📂 **Data Insights**
 
 ### **Background Information**
 Sprocket Central Pty Ltd marketing team is looking to boost business by analysing their existing customer dataset to determine customer trends and behaviour. Using the existing 3 datasets (Customer demographic, customer address and transactions) as a labelled dataset, we will recommend which of these 1000 new customers should be targeted to drive the most value for the organisation. <br>
