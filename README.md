@@ -23,6 +23,6 @@ Project Link | Associated | Area | Tools | Project Description
 ### 📂 Dashboard
 Project Link | Associated | Tools | Project Description
 ---|---|---|---
-👩🏻‍💻 [Donations to Israel](https://public.tableau.com/app/profile/shai.kikozashvily/viz/Team55Presentation26_07/sheet18) (EDA, data analysis) | - | Tableau | Analyze donations to Israel.
+👩🏻‍💻 [Donations to Israel](https://public.tableau.com/app/profile/shai.kikozashvily/viz/Team55Presentation26_07/sheet18) | - | Tableau | Analyze donations to Israel.
 <br>
 <br>
