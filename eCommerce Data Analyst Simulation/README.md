@@ -44,6 +44,3 @@ No | Outline | Description
 3 | [MID-COURSE PROJECT](https://github.com/faizns/Udemy-Advanced-MySQL-Data-Analysis/tree/ab86cac0a64f20fff34c36b6784c2ff8b7929d83/03_Mid%20Course%20Project) | Preparing data for the executive board meeting.
 4 | [Channel Analysis & Optimization](https://github.com/faizns/Udemy-Advanced-MySQL-Data-Analysis/tree/ab86cac0a64f20fff34c36b6784c2ff8b7929d83/04_Channel%20Analysis%20%26%20Optimization) | Dig deeper into our traffic channel mix, explore paid vs. free traffic, break down performance by device type, and write advanced SQL queries to conduct some time-series analyses to understand trending and seasonality.
 5 | Product-Level Analysis | Break down product-level sales and conversion rates, analyze cross-selling patterns, and use refund rates to keep a pulse on quality.
-6 | User-Level Analysis | Take a closer look at user behavior and repeat sessions, and use MySQL techniques to identify our most valuable customers and explore which channels they are coming from.
-7 | FINAL PROJECT | Building a data-driven growth story for potential investors.
-
