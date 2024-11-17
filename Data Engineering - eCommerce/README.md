@@ -25,8 +25,8 @@ To run this project locally, you need to have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/shaik1201/Data-Projects.git
+cd Data Engineering - eCommerce
 ```
 
 ### 2. Environment Setup
