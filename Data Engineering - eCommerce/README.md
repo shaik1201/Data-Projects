@@ -22,26 +22,135 @@ To run this project locally, you need to have the following installed:
 
 ## Getting Started
 
-Follow these steps to get the project up and running on your local machine.
-
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 ```
 
-### Step 2: Build and Start the Docker Containers
+### 2. Environment Setup
 
-Run the following command to build and start all containers using Docker Compose:
+The project uses Docker Compose to manage all services. No additional local installations are required.
+
+### 3. Build and Launch
+
+Start all services using Docker Compose:
+
 ```bash
 docker-compose up --build -d
 ```
-This command will start the following services:
 
-Data Simulator: Generates simulated ecommerce data and streams it to Kafka. <br>
-Kafka: Kafka instance for streaming the data.<br>
-Spark: Spark job that consumes the Kafka stream, processes it, and stores the results in MySQL.<br>
-MySQL: MySQL database where processed data is stored.<br>
-The services will run in the background, and you will be able to track logs to monitor the process.
+This command will:
+- Build custom images for each service
+- Start all containers in detached mode
+- Set up necessary networking between containers
+- Initialize the MySQL database
 
+## Monitoring and Verification
+
+### Check Kafka Streams
+
+View incoming messages in Kafka:
+
+```bash
+docker exec -it <kafka-container-id> kafka-console-consumer \
+    --bootstrap-server localhost:29092 \
+    --topic ecommerce-transactions \
+    --from-beginning
+```
+
+### Monitor Spark Processing
+
+View Spark processing outputs:
+
+```bash
+docker logs -f <spark-container-id>
+```
+
+Example output:
+```
+window_start       |window_end         |category |total_sales |avg_price|total_quantity|num_transactions
+2024-11-17 18:29:13|2024-11-17 18:30:13|home     |734.84      |367.42   |2            |1
+2024-11-17 18:29:13|2024-11-17 18:30:13|books    |277.44      |69.36    |4            |1
+```
+
+### Query MySQL Database
+
+Access the MySQL shell:
+
+```bash
+docker exec -it <mysql-container-id> mysql -u spark -p ecommerce
+# Password: spark123
+```
+
+View processed data:
+```sql
+USE ecommerce;
+SHOW TABLES;
+SELECT * FROM sales_analytics;
+```
+
+## Implementation Details
+
+### Data Simulator
+- Generates realistic e-commerce transaction data
+- Simulates various product categories, prices, and quantities
+- Streams data to Kafka in real-time
+
+### Kafka Configuration
+- Single broker setup for development
+- Topic: `ecommerce-transactions`
+- Configurable retention and partition settings
+
+### Spark Streaming
+- Processes data in micro-batches
+- Calculates key metrics:
+  - Total sales per category
+  - Average price per transaction
+  - Transaction counts
+  - Quantity sold
+- Implements windowed aggregations
+
+### MySQL Schema
+```sql
+CREATE TABLE sales_analytics (
+    window_start TIMESTAMP,
+    window_end TIMESTAMP,
+    category VARCHAR(50),
+    total_sales DECIMAL(10,2),
+    avg_price DECIMAL(10,2),
+    total_quantity INT,
+    num_transactions INT,
+    PRIMARY KEY (window_start, window_end, category)
+);
+```
+
+## Troubleshooting
+
+1. **Containers not starting:**
+   ```bash
+   docker-compose logs <service-name>
+   ```
+
+2. **No data in MySQL:**
+   - Check Kafka consumer status
+   - Verify Spark processing logs
+   - Ensure MySQL container is healthy
+
+3. **Spark processing errors:**
+   - Check for schema mismatches
+   - Verify Kafka connectivity
+   - Review resource allocations
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
