@@ -2,6 +2,8 @@
 
 This project implements a real-time e-commerce data processing pipeline using modern data engineering tools and technologies. It simulates e-commerce data, processes it through various stages, and stores it in a relational database, all containerized using Docker.
 
+📝 For a detailed walkthrough of this project, check out my blog post: [Learn Data Engineering: Building an E-commerce Analytics Pipeline with Kafka, Spark, and Docker](https://medium.com/@kikoshai97/learn-data-engineering-building-an-e-commerce-analytics-pipeline-with-kafka-spark-and-docker-02e7d945ae6c)
+
 ## Project Architecture
 
 The system architecture includes the following components:
