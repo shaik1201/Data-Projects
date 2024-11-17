@@ -11,32 +11,7 @@ The system architecture includes the following components:
 - **Spark**: Processes the streamed data.
 - **MySQL**: Stores the processed data.
 
-![System Architecture](path_to_your_system_architecture_image.png)
-
-## Folder Structure
-
-The project folder structure is as follows:
-
-├── data-simulator/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── requirements.txt
-│   │   ├── simulator.py
-│   │   └── test_connection.py
-│   └── Dockerfile
-├── kafka/
-│   ├── Dockerfile
-│   └── producer.py
-├── mysql/
-│   └── init.sql
-├── spark/
-│   ├── Dockerfile
-│   ├── log4j.properties
-│   ├── requirements.txt
-│   └── spark_processor.py
-└── docker-compose.yml
-
-
+![System Architecture](https://github.com/shaik1201/Data-Projects/blob/main/Data%20Engineering%20-%20eCommerce/Architecture.png)
 
 ## Requirements
 
@@ -64,9 +39,9 @@ docker-compose up --build -d
 ```
 This command will start the following services:
 
-Data Simulator: Generates simulated ecommerce data and streams it to Kafka.
-Kafka: Kafka instance for streaming the data.
-Spark: Spark job that consumes the Kafka stream, processes it, and stores the results in MySQL.
-MySQL: MySQL database where processed data is stored.
+Data Simulator: Generates simulated ecommerce data and streams it to Kafka. <br>
+Kafka: Kafka instance for streaming the data.<br>
+Spark: Spark job that consumes the Kafka stream, processes it, and stores the results in MySQL.<br>
+MySQL: MySQL database where processed data is stored.<br>
 The services will run in the background, and you will be able to track logs to monitor the process.
 
