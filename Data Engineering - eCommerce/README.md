@@ -114,13 +114,13 @@ SELECT * FROM sales_analytics;
 
 ### MySQL Schema
 ```sql
-CREATE TABLE sales_analytics (
+CREATE TABLE IF NOT EXISTS sales_analytics (
     window_start TIMESTAMP,
     window_end TIMESTAMP,
-    category VARCHAR(50),
-    total_sales DECIMAL(10,2),
-    avg_price DECIMAL(10,2),
-    total_quantity INT,
+    category VARCHAR(255),
+    total_sales DOUBLE,
+    avg_price DOUBLE,
+    total_quantity BIGINT,
     num_transactions INT,
     PRIMARY KEY (window_start, window_end, category)
 );
