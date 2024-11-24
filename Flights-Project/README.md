@@ -9,7 +9,6 @@ This project demonstrates the creation of a scalable data pipeline using modern 
 - **Google BigQuery**: Data warehousing for analytics.
 - **Power BI**: Interactive data visualization and reporting.
 
----
 
 ## Project Overview
 
