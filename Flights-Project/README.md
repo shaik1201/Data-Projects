@@ -25,5 +25,6 @@ The objective of this project is to build an end-to-end data pipeline to:
 Source Data -> Extract (Airflow) -> Transform (Spark) -> Load to GCS -> BigQuery -> Power BI
 ```
 
-# Project Architecture
+# Report
+![Report]()
 
