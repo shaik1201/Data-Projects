@@ -43,25 +43,4 @@ Tool: Power BI
 Description: Interactive dashboards and reports are built to analyze key metrics and derive insights from the processed data stored in BigQuery.
 
 # Project Architecture
-+-------------------+         +---------------------+         +-------------------------+
-| Source Data (API, |         | Apache Airflow DAGs |         | Apache Spark Jobs       |
-| CSV, etc.)        |   -->   | (ETL Orchestration) |   -->   | (Data Transformation)   |
-+-------------------+         +---------------------+         +-------------------------+
-                                      |
-                                      v
-                              +--------------------+
-                              | Google Cloud       |
-                              | Storage (Staging)  |
-                              +--------------------+
-                                      |
-                                      v
-                              +--------------------+
-                              | Google BigQuery    |
-                              | (Data Warehouse)   |
-                              +--------------------+
-                                      |
-                                      v
-                              +--------------------+
-                              | Power BI           |
-                              | (Visualization)    |
-                              +--------------------+
+
