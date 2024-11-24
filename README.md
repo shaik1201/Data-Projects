@@ -16,11 +16,12 @@ Project Link | Associated | Area | Library | Project Description
 
 Project Link | Associated | Area | Tools | Project Description
 ---|---|---|---|---
-🛍 [Data Engineering - eCommerce](https://github.com/shaik1201/Data-Projects/tree/main/Data%20Engineering%20-%20eCommerce)| - | Data Engineering | Flask, Apache Kafka, Apache Spark, MySQL | This project implements a real-time e-commerce data processing pipeline using modern data engineering tools and technologies. It simulates e-commerce data, processes it through various stages, and stores it in a relational database, all containerized using Docker.
+🛍 [eCommerce](https://github.com/shaik1201/Data-Projects/tree/main/Data%20Engineering%20-%20eCommerce)| - | Data Engineering | Flask, Apache Kafka, Apache Spark, MySQL | This project implements a real-time e-commerce data processing pipeline using modern data engineering tools and technologies. It simulates e-commerce data, processes it through various stages, and stores it in a relational database, all containerized using Docker.
 <br>
+🛍 [Flights Project](https://github.com/shaik1201/Data-Projects/tree/main/Flights-Project)| - | Data Engineering | Airflow, Spark, GCS, BigQuery, Power Bi 
 <br>
 
-🛍 [Data Engineering - Flights Project](https://github.com/shaik1201/Data-Projects/tree/main/Flights-Project)| - | Data Engineering | Airflow, Spark, GCS, BigQuery, Power Bi |
+🛍 [Flights Project](https://github.com/shaik1201/Data-Projects/tree/main/Flights-Project)| - | Data Engineering | Airflow, Spark, GCS, BigQuery, Power Bi |
 <br>
 <br>
 
