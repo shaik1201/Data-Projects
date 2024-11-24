@@ -20,6 +20,10 @@ Project Link | Associated | Area | Tools | Project Description
 <br>
 <br>
 
+🛍 [Data Engineering - Flights Project](https://github.com/shaik1201/Data-Projects/tree/main/Flights-Project)| - | Data Engineering | Airflow, Spark, GCS, BigQuery, Power Bi |
+<br>
+<br>
+
 ### 📂 SQL
 
 Project Link | Associated | Area | Tools | Project Description
