@@ -26,5 +26,5 @@ Source Data -> Extract (Airflow) -> Transform (Spark) -> Load to GCS -> BigQuery
 ```
 
 # Report
-![Report]()
+![Report](https://github.com/shaik1201/Data-Projects/blob/main/Flights-Project/report.png)
 
