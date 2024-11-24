@@ -1,0 +1,27 @@
+version: '3'
+
+
+
+services:
+
+  sleek-airflow:
+
+    image: sleek-airflow:latest
+
+    
+
+    volumes:
+
+      - ./airflow:/opt/airflow
+      - ~/.google/tidy-node-442211-a2-bcaf24050d98.json:/home/airflow/.google/tidy-node-442211-a2-bcaf24050d98.json
+      - ~/.ssh/id_ed25519:/home/airflow/.ssh/id_ed25519
+
+
+
+    ports:
+
+      - "8081:8080"
+
+
+
+    command: airflow standalone
