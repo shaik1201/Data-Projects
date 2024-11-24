@@ -26,21 +26,5 @@ The objective of this project is to build an end-to-end data pipeline to:
 Source Data -> Extract (Airflow) -> Transform (Spark) -> Load to GCS -> BigQuery -> Power BI
 ```
 
-
-# Implementation Details
-1. Data Extraction
-Tool: Apache Airflow
-Description: Airflow orchestrates the data extraction process. DAGs (Directed Acyclic Graphs) are configured to fetch the raw data periodically from the source (e.g., APIs, flat files).
-2. Data Transformation
-Tool: Apache Spark
-Description: Spark processes and cleanses the raw data, handles missing values, and performs aggregations or feature engineering as required.
-Storage: The processed data is saved to Google Cloud Storage in a structured format (e.g., Parquet, CSV).
-3. Data Loading
-Tool: Google BigQuery
-Description: Processed data is loaded into BigQuery for analytical querying. BigQuery's scalability ensures efficient handling of large datasets.
-4. Visualization and Analysis
-Tool: Power BI
-Description: Interactive dashboards and reports are built to analyze key metrics and derive insights from the processed data stored in BigQuery.
-
 # Project Architecture
 
